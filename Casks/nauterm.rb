@@ -1,9 +1,9 @@
 cask "nauterm" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.3.2"
-  sha256 arm:   "fb338da2e2b4e7ce56539bd644d4f1900f0dcd7ea59e254d08049d2e71379560",
-         intel: "83b386f72a5c82152ed06e2ba146d786c0942e824bcf7606b682f4b842fe81be"
+  version "0.3.5"
+  sha256 arm:   "06df1dfa93b9deccc87a5d54ff1f5d489d8d9d03055debfff793af28ca11cb4d",
+         intel: "ecc80d381404bbb14b67e4cc04cce0c023c7b0690115a84236ce3c000d1878d5"
 
   url "https://github.com/korvect/nauterm/releases/download/v#{version}/Nauterm-#{version}-macos-#{arch}.app.zip"
   name "Nauterm"
