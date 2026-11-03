@@ -19,9 +19,9 @@ cask "nauterm" do
 
   app "Nauterm.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Nauterm.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/Nauterm.app"]
   end
 
   zap trash: [
